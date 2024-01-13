@@ -7,7 +7,7 @@ services:
     restart: always
     volumes:
       - ./:/app
-    command:  run --enable-api --cors "*" --model models/20231231-102135-quick-taco.tar.gz
+    command:  run --enable-api --cors "*" --model models/20231231-102135-quick-taco.tar.gz --port 5005
     ports:
       - '5005:5005'
     networks:
@@ -20,7 +20,7 @@ services:
     restart: always
     volumes:
       - ./:/app
-    command: run --enable-api --cors "*" --model models/20240102-094620-parallel-elevation.tar.gz
+    command: run --enable-api --cors "*" --model models/20240102-094620-parallel-elevation.tar.gz --port 5006
     ports:
       - '5006:5006'
     networks:
